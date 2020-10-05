@@ -2,13 +2,12 @@ package com.example.orientacao
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.os.PersistableBundle
 import android.widget.ArrayAdapter
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
-    var names = arrayListOf<String>()
-    var adapter: ArrayAdapter<String>? = null
+    private var names = arrayListOf<String>()
+    private var adapter: ArrayAdapter<String>? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
